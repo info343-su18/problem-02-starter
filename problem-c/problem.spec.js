@@ -2,7 +2,6 @@ const fs = require('fs');
 const cheerio = require('cheerio') //for html testing
 const inlineCss = require('inline-css'); //for css testing
 const cssParser = require('css');
-const md5 = require('md5');
 
 //include custom matchers
 const styleMatchers = require('jest-style-matchers');
@@ -87,9 +86,13 @@ describe('Includes required CSS rules', () => {
     expect(nav.css('position')).toEqual('fixed');
     expect(nav.css('top')).toEqual('0');
     expect(nav.css('left')).toEqual('0');
+
+    expect($('h1').css('margin-top')).toEqual('3em');
+
     expect(nav.css('width')).toEqual('100%');
     expect(nav.css('background-color').toLowerCase()).toEqual('#4b2e83');
     expect(nav.css('padding')).toEqual('.75rem');
+
   })
 
   test('4. Navbar links are correctly styled', () => {

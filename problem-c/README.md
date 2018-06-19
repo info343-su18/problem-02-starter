@@ -31,6 +31,8 @@ Instructions for achieving this appearance are detailed below. Note that you wil
 
 3. The navigation bar (the `<nav>` element) should be `fixed` to the top of the screen. Be sure to specify it's absolute location! 
 
+    - To make sure the content sits below the fixed navbar, give the top-level heading a top margin of `3em`.
+
     - The navbar should take up `100%` of the page.
 
     - The navbar should also have a background color of UW Purple.
