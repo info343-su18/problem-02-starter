@@ -103,9 +103,8 @@ describe('First post has accessible images', () => {
     let cite = figcap.children('cite');
     expect(cite.length).toEqual(1); //<figcaption> contains <cite> tag
     let citation = cite.html().split('\n').join(' ').replace(/\s{2,}/,' ');
-    expect(citation).toMatch(content); //<cite> contains all the content
     let content = new RegExp('Bizzard, the pup, by Frank Harvey. From the <a href="https://www.flickr.com/photos/statelibraryofnsw/2959326615/">State Library of NSW</a>.')
-    expect(cite.html().trim()).toMatch(content); //<cite> contains all the content
+    expect(citation).toMatch(content); //<cite> contains all the content
   })
 })
 
