@@ -2,8 +2,6 @@
 
 In this exercise, you'll practice working with CSS properties and layouts.
 
-To complete the exercise, add rules to the included `css/style.css` file that apply the styling notes listed in the included `index.html` file. (That is: open up the HTML file and look at the comments for what style each element should have. Then write a rule that applies that style to that element). For this exercise, you must **not** modify the HTML file: try to come up with selectors based only on the provided structure! 
-
 To complete the exercise, add rules to the included `css/style.css` file in order to style the included `index.html` page so that it has a stylish navigation bar:
 
 ![Example of completed exercise](img/sample-solution.gif)
@@ -53,11 +51,11 @@ Instructions for achieving this appearance are detailed below. Note that you wil
 
     - The `input` box should have a height of `2.5rem`, a `font-size` of `1rem`, `.5rem` of space between the text and (all of) the box edges, and be [`bottom` aligned](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) (to line up with the button).
 
-7. The search button should show a magnifying glass icon instead of the word "Search". You should replace the text with a [Font Awesome icon](http://fontawesome.io/icon/search/).
+7. The search button should show a magnifying glass icon instead of the word "Search". You should replace the text with a [Font Awesome icon](https://fontawesome.com/v4.7.0/icons/).
 
     - You will need to include the Font Awesome library (via CDN) in your `index.html` file.
 
-    - Add the element for the icon in place of the word "Search". You should also [flip the fa icon](http://fontawesome.io/examples/#rotated-flipped) so it faces the right way.
+    - Add the element for the icon in place of the word "Search". You should also [flip the fa icon](https://fontawesome.com/v4.7.0/examples/) so it faces the right way.
 
     - The search button (which now contains the icon) should have a height of `2.5rem`, a font-size of `1.5rem` and `.3rem` of padding all around.
 
@@ -69,7 +67,7 @@ Instructions for achieving this appearance are detailed below. Note that you wil
 
 9. No navbar is complete without a logo, so add the iSchool logo (provided as `img/ischool-symbol-white.png`) to the side of the word "Informatics" in the first link. But since adding this as an `<img>` tag will make things difficult to style, you should instead include the logo as part of a _background image_.
 
-    - First, add a `<span>` (an empty inline element) directly before the word "Informatics" inside the first list item. This `<span>` will need to just have an empty space as content, use a [non-breaking space HTML entity](https://www.w3schools.com/html/html_entities.asp). You can even give it an `aria-hidden` to ensure it isn't accidentally read by a screen reader!
+    - First, add a `<span>` element (an empty inline element) directly before the word "Informatics" inside the first list item. This `<span>` will need to just have an empty space as content, use a [non-breaking space HTML entity](https://www.w3schools.com/html/html_entities.asp). You can additionally give it an `aria-hidden` to ensure it isn't accidentally read by a screen reader!
 
         - Give the span a CSS class of `logo` to be able to style it (and for testing).
 
